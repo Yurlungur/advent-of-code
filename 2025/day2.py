@@ -10,9 +10,6 @@ def is_invalid_part1(key):
         return False
     return key[:l//2] == key[l//2:]
 
-def is_all_1_char(sequence):
-    return len(set(sequence)) == 1
-
 def check_is_repeat(key, pattern):
     if len(key) % len(pattern) != 0:
         return False
